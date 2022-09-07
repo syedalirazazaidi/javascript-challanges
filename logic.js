@@ -13,4 +13,21 @@ for (let index = 0; index < arry.length; index++) {
     }
   }
 }
-console.log(sum)
+// console.log(sum)
+
+// remove regix from the string
+// he is very good boy, isn't he?
+function newFun(str) {
+  var reg = ['?', '@', '?', "'", ',']
+  var strwithoutregix = ''
+  for (let index = 0; index < str.length; index++) {
+    var letter = str[index]
+    if (reg.includes(letter)) {
+      strwithoutregix += ' '
+    } else {
+      strwithoutregix += letter
+    }
+  }
+  console.log(strwithoutregix)
+}
+newFun("'he is very good boy, isn't he?")
